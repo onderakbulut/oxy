@@ -1,0 +1,58 @@
+.hero {
+    @apply bg-blue-50;
+    @apply min-h-dvh relative;
+    &__inner {
+        @apply h-dvh min-h-[800px];
+        @apply max-sm:px-0;
+    }
+    &__banner {
+        @apply mx-auto h-full;
+        @apply object-cover;
+        @apply lg:object-contain;
+    }
+    &__shape {
+        @apply absolute inset-0 flex items-center justify-center;
+        @apply mix-blend-multiply;
+        
+    }
+    &__content {
+        @apply absolute inset-0 flex flex-col items-center justify-center;
+        @apply lg:top-[20%];
+        @apply text-white text-center;
+        &-title {
+            @apply text-5xl font-semibold mb-5;
+            @apply lg:text-[66px] lg:mb-[60px];
+        }
+        &-desc {
+            @apply text-center text-2xl;
+            @apply lg:max-w-[500px] lg:text-[30px] lg:leading-[35px];
+        }
+    }
+    .swiper {
+        @apply h-full;
+    }
+    .swiper-pagination {
+        @apply absolute inset-0 container ;
+        top : 50%!important;
+        bottom: unset!important;
+        width: unset!important;
+        @apply -translate-y-1/2;
+        @apply flex flex-col gap-y-4;
+    }
+    .swiper-pagination-bullet {
+        margin: 5px 0;
+        width: 13px;
+        height: 13px;
+        background-color: black;
+    }
+}
+
+.scroll-down {
+    @apply w-16 h-16 bg-white rounded-full;
+    @apply absolute bottom-[5%] left-1/2 -translate-x-1/2 z-10;
+    @apply flex items-center justify-center;
+    @apply lg:w-[123px] lg:h-[123px] lg:bottom-[10%];
+    > img {
+        @apply max-md:h-6;
+    }
+}
