@@ -1,0 +1,50 @@
+.services {
+    @apply py-10 relative;
+    @apply lg:pt-[80px] lg:pb-[130px];
+    @apply bg-blue-900;
+    &__title {
+        @apply font-semibold text-white text-center relative z-10 mb-8 text-4xl;
+        @apply lg:text-5xl lg:mb-[65px]; 
+        &::after {
+            content:'';
+            @apply absolute -bottom-3 left-1/2 -translate-x-1/2 -z-10;
+            @apply h-10 w-[200px] bg-black-50 rounded-[20px];
+        }
+    }
+    &__container {
+        @apply container flex justify-center;
+    }
+    &__items {
+        @apply flex flex-wrap justify-center text-white;
+        @apply gap-8;
+        @apply lg:w-[790px] lg:gap-y-[90px] lg:justify-between;
+    }
+    &__item {
+        @apply relative inline-block;
+        &-desc {
+            @apply absolute inset-0 flex items-center justify-center;
+            @apply text-4xl font-semibold pt-6;
+        }
+    }
+    &__icon {
+        @apply mx-auto;
+    }
+    &__lines {
+        @apply lg:w-[790px] mx-auto;
+        @apply absolute inset-0;
+        @apply max-md:hidden;
+    }
+    &__line {
+        @apply w-0.5 h-full bg-white;
+        @apply absolute top-0 bottom-0 opacity-10; 
+        &.-left {
+            @apply left-11;
+        }
+        &.-right {
+            @apply right-11;
+        }
+        &.-center {
+            @apply left-1/2;
+        }
+    }
+}
