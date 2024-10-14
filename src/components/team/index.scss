@@ -1,0 +1,43 @@
+.team {
+    @apply py-10 relative;
+    @apply lg:pt-[80px] lg:pb-[130px];
+    &__title {
+        @apply font-semibold text-black text-center relative z-10 mb-8 text-4xl;
+        @apply lg:text-5xl lg:mb-[80px]; 
+        &::after {
+            content:'';
+            @apply absolute -bottom-3 left-1/2 -translate-x-1/2 -z-10;
+            @apply h-10 w-[200px] bg-pink-100 rounded-[20px];
+        }
+    }
+    &__desc {
+        @apply max-lg:px-5;
+        @apply text-lg mx-auto text-center font-light mb-10;
+        @apply lg:max-w-[836px] lg:leading-[30px] lg:mb-[70px];
+    }
+    &__list {
+        @apply flex flex-wrap mx-auto justify-center gap-5;
+        @apply lg:max-w-[1100px] lg:gap-x-[70px];
+    }
+    &__member {
+        @apply max-lg:overflow-hidden;
+        @apply relative ;
+        @apply lg:ml-[57px] lg:w-[calc(33.333%_-_140px)];
+        img {
+            @apply max-lg:w-full;
+        }
+    }
+    &__shape {
+        @apply absolute mix-blend-multiply;
+        @apply -left-[57px] -bottom-[82px];
+    }
+    &__info {
+        @apply absolute inset-0 flex flex-col justify-end pb-5 text-white;
+        &-name {
+            @apply text-2xl font-semibold leading-[27px];
+        }
+        &-role {
+            @apply font-medium;
+        }
+    }
+}

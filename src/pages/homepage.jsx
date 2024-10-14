@@ -1,6 +1,7 @@
 import Hero from '@/components/hero/hero'
 import Services from '@/components/services/services'
 import Portfolio from '@/components/portfolio/portfolio'
+import Team from '@/components/team/team'
 
 function HomePage() {
     return (  
@@ -8,6 +9,7 @@ function HomePage() {
             <Hero />
             <Services />
             <Portfolio />
+            <Team />
         </div>
     );
 }
