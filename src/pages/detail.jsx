@@ -1,9 +1,9 @@
-
+import Project from '@/components/project/project'
 
 function Detail() {
     return ( 
         <>
-            detail
+            <Project />
         </>
     );
 }

@@ -1,0 +1,40 @@
+.project {
+    @apply py-20;
+    @apply lg:pt-[213px] lg:pb-[104px];
+    &__inner {
+        @apply max-lg:px-5;
+        @apply lg:max-w-[1140px] lg:mx-auto;
+    }
+    &__row {
+        @apply flex flex-wrap items-center mb-[52px];
+        @apply gap-y-8;
+    }
+    &__content { 
+        @apply w-full;
+        @apply lg:w-5/12;
+        &-title {
+            @apply text-[66px] leading-[77px] font-semibold;
+        }
+        &-year {
+            @apply mb-9;
+        }
+        &-year,
+        &-desc {
+            @apply text-xl font-light;
+        }
+    }
+    &__banner {
+        @apply relative w-full;
+        @apply lg:w-7/12;
+        &-img {
+            mask-image: url('../../project-hero.svg');
+            mask-size: contain; 
+            mask-repeat: no-repeat;
+            mask-position: center;
+        }
+    }
+    &__cta {
+        @apply flex justify-center;
+    }
+}
+
