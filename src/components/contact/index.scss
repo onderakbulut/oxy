@@ -1,0 +1,66 @@
+.contact {
+    @apply py-10 relative;
+    @apply lg:pt-[80px] lg:pb-[45px];
+    @apply bg-blue-900;
+    &__lines {
+        @apply lg:w-[790px] mx-auto;
+        @apply absolute inset-0;
+        @apply max-md:hidden;
+    }
+    &__line {
+        @apply w-0.5 h-full bg-white;
+        @apply absolute top-0 bottom-0 bg-opacity-10; 
+        &.-left {
+            @apply left-11;
+        }
+        &.-right {
+            @apply right-11;
+        }
+        &.-center {
+            @apply left-1/2;
+        }
+    }
+    &__title {
+        @apply font-semibold text-white text-center relative z-10 mb-8 text-4xl;
+        @apply lg:text-5xl lg:mb-[65px]; 
+        &::after {
+            content:'';
+            @apply absolute -bottom-3 left-1/2 -translate-x-1/2 -z-10;
+            @apply h-10 w-[200px] bg-black-50 rounded-[20px];
+        }
+    }
+    &__subTitle {
+        @apply text-lg text-white text-center relative mb-5;
+        @apply  lg:mb-[80px] lg:text-3xl;
+    }
+    &__form {
+        @apply max-lg:px-5;
+        @apply relative;
+        @apply lg:max-w-[630px] lg:mx-auto;
+        &-group {
+            @apply flex gap-x-[70px];
+            
+        }
+        &-input {
+            @apply w-full py-2 bg-transparent border-b border-white text-white border-opacity-20;
+            &::placeholder {
+                @apply text-lg text-white;
+            }
+            &:focus-visible {
+                @apply outline-none;
+            }
+        }
+        &-button {
+            @apply text-[28px] font-semibold text-white bg-orange-pink block mx-auto;
+            @apply px-[64px] py-[9px] rounded-[30px] mb-[100px];
+        }
+    }
+}
+
+.social {
+    @apply flex justify-center gap-x-5 relative mb-9;
+}
+
+.copyright {
+    @apply text-center text-white text-sm relative;
+}

@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import { useEffect, useState } from 'react';
 
 import Header from '@/components/header/header'
+import Contact from '@/components/contact/contact'
 import HomePage from "@/pages/homepage";
 import Detail from "@/pages/detail";
 import ToggleSidebar from '@/components/sidebar/sidebar'
@@ -32,6 +33,7 @@ function App() {
         <Route exact path="/" element={<HomePage />} />
         <Route path="/detail" element={<Detail />} />
       </Routes>
+      <Contact />
     </Router>
   )
 }
