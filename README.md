@@ -1,8 +1,25 @@
-# React + Vite
+# Oxy Agency
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Digital agency React template with Vite.
 
-Currently, two official plugins are available:
+## Techniques and Tools
+- **Mobile Responsive Web Design.**
+- **React Sass, Tailwind, Bem**
+- **React 18.3.1**
+- **React Router**
+- **Swiper**
+- **Framer Motion**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ## Development
+
+To get started with this project, follow these simple steps:
+
+```bash
+$ git clone git@github.com:onderakbulut/oxy.git
+$ npm install
+$ npm run dev
+$ npm run build
+```
+
+![screenshot](https://github.com/user-attachments/assets/b140bf19-739d-42d0-8141-089a9d8eab6f)
+
