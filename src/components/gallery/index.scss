@@ -1,0 +1,11 @@
+.gallery {
+    @apply py-10;
+    @apply lg:pb-[90px] lg:pt-[100px];
+    &__inner {
+        @apply max-w-[1140px] mx-auto;
+    }
+    &__desc {
+        @apply text-center pt-10 text-lg font-light;
+        @apply lg:pt-[98px] lg:max-w-[836px] lg:mx-auto;
+    }
+}

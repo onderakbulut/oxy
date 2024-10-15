@@ -1,0 +1,39 @@
+.desc {
+    @apply py-10 relative;
+    @apply lg:pt-[80px] lg:pb-[92px];
+    @apply bg-blue-900;
+    &__lines {
+        @apply lg:w-[790px] mx-auto;
+        @apply absolute inset-0;
+        @apply max-md:hidden;
+    }
+    &__line {
+        @apply w-0.5 h-full bg-white;
+        @apply absolute top-0 bottom-0 bg-opacity-10; 
+        &.-left {
+            @apply left-11;
+        }
+        &.-right {
+            @apply right-11;
+        }
+        &.-center {
+            @apply left-1/2;
+        }
+    }
+    &__title {
+        @apply font-semibold text-white text-center relative z-10 mb-8 text-4xl;
+        @apply lg:text-5xl lg:mb-[65px]; 
+        &::after {
+            content:'';
+            @apply absolute -bottom-3 left-1/2 -translate-x-1/2 -z-10;
+            @apply h-10 w-[200px] bg-black-50 rounded-[20px];
+        }
+    }
+    &__inner {
+        @apply text-center text-white relative font-light;
+        @apply lg:max-w-[840px] lg:mx-auto lg:text-2xl;
+        p {
+            @apply first-of-type:mb-8;
+        }
+    }
+}
