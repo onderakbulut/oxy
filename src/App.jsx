@@ -6,6 +6,8 @@ import Contact from '@/components/contact/contact'
 import HomePage from "@/pages/homepage";
 import Detail from "@/pages/detail";
 import ToggleSidebar from '@/components/sidebar/sidebar'
+import ScrollToTop from '@/components/scroll-to-top/scroll-to-top'
+import Preloader from '@/components/preloader/preloader'
 
 function RouteToTop() {
   const { pathname } = useLocation();
@@ -26,6 +28,7 @@ function App() {
 
   return (
     <Router>
+      <Preloader />
       <RouteToTop />
       <Header toggleSidebar={toggleSidebar} />
       <ToggleSidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
@@ -34,6 +37,7 @@ function App() {
         <Route path="/detail" element={<Detail />} />
       </Routes>
       <Contact />
+      <ScrollToTop />
     </Router>
   )
 }
