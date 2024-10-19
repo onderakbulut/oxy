@@ -3,12 +3,12 @@
 Digital agency React template with Vite.
 
 ## Techniques and Tools
-- **Mobile Responsive Web Design.**
-- **React Sass, Tailwind, Bem**
-- **React 18.3.1**
-- **React Router**
-- **Swiper**
-- **Framer Motion**
+- Mobile Responsive Web Design.
+- React Sass, Tailwind, Bem
+- React 18.3.1
+- React Router
+- Swiper
+- Framer Motion
 
 - ## Development
 
