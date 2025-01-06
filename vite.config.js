@@ -24,5 +24,8 @@ export default defineConfig({
         api: 'modern-compiler' // or "modern"
       }
     }
-  }
+  },
+  server: {
+    historyApiFallback: true,
+  },
 })
